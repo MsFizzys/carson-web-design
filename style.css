@@ -1,11 +1,11 @@
-/* GLOBAL STYLES */
+/* GLOBAL */
 body {
     margin: 0;
     font-family: 'Lato', sans-serif;
-    background-color: #0a1a2f; /* Midnight navy */
-    color: #ffffff; /* White text */
+    background: linear-gradient(160deg, #0a1a2f 0%, #123a4f 100%);
+    color: #ffffff;
+    text-align: center;
     line-height: 1.7;
-    text-align: center; /* Center all text */
 }
 
 /* HEADINGS */
@@ -16,27 +16,21 @@ h1, h2 {
     color: #ffffff;
 }
 
-/* SECTION DIVIDERS */
-section {
-    padding: 2.5rem 1.5rem;
-    border-bottom: 1px solid rgba(255, 255, 255, 0.15); /* Subtle divider */
-}
-
 /* HEADER */
 .site-header {
-    background-color: #d8c48c; /* Gold header */
+    background-color: #d8a84f; /* Amber/Brown-Gold */
     color: #ffffff;
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 1rem;
     position: relative;
-    border-bottom: 2px solid #bfa86f; /* Slightly darker gold line */
+    border-bottom: 2px solid #c79a45; /* Thin soft-gold line */
 }
 
 .logo {
-    font-size: 1.4rem;
     margin: 0;
+    font-size: 1.4rem;
     text-shadow: 0px 1px 2px rgba(0,0,0,0.25);
 }
 
@@ -53,8 +47,8 @@ section {
 .mobile-menu {
     display: none;
     flex-direction: column;
-    background-color: #0a1a2f; /* Match body */
-    border-top: 2px solid #d8c48c;
+    background-color: #0a1a2f;
+    border-top: 2px solid #d8a84f;
     position: absolute;
     top: 100%;
     right: 0;
@@ -65,7 +59,7 @@ section {
     padding: 1rem;
     text-decoration: none;
     color: #ffffff;
-    border-bottom: 1px solid rgba(255, 255, 255, 0.15);
+    border-bottom: 1px solid rgba(255,255,255,0.15);
     font-weight: 600;
 }
 
@@ -73,10 +67,28 @@ section {
     display: flex;
 }
 
+/* ANGLED SECTION CUTS */
+section {
+    padding: 3rem 1.5rem;
+    position: relative;
+}
+
+section::before {
+    content: "";
+    position: absolute;
+    top: -40px;
+    left: 0;
+    width: 100%;
+    height: 40px;
+    background: inherit;
+    transform: skewY(-3deg);
+    transform-origin: top left;
+}
+
 /* BUTTONS */
 .button {
     display: inline-block;
-    background-color: #d8c48c;
+    background-color: #d8a84f;
     color: #0a1a2f;
     padding: 0.9rem 1.6rem;
     text-decoration: none;
@@ -89,15 +101,14 @@ section {
     display: block;
     margin-top: 0.5rem;
     text-decoration: none;
-    color: #d8c48c;
+    color: #d8a84f;
     font-weight: 600;
 }
 
 /* FOOTER */
 footer {
-    text-align: center;
-    padding: 1.5rem;
     background-color: #0a1a2f;
-    border-top: 1px solid rgba(255, 255, 255, 0.15);
+    padding: 1.5rem;
+    border-top: 2px solid #c79a45; /* Thin soft-gold line */
     color: #ffffff;
 }
