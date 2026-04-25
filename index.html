@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>SEO‑Focused Web Design for Small Businesses | Carson Web Design</title>
+
+    <meta name="description" content="Carson Web Design builds modern, mobile-first, SEO-optimized websites for small businesses and individuals. Get a fast, clean site that helps customers find you online.">
+
+    <!-- Primary keywords in meta -->
+    <meta name="keywords" content="web design, SEO, search engine optimization, small business websites, mobile-first websites, website developer">
+
+    <!-- Open Graph -->
+    <meta property="og:title" content="Carson Web Design | SEO‑Focused Websites for Small Businesses">
+    <meta property="og:description" content="Modern, mobile-first, SEO-optimized websites that help your small business get found online.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://www.yourdomain.com/">
+    <meta property="og:image" content="https://www.yourdomain.com/images/preview.jpg">
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Carson Web Design | SEO‑Focused Websites">
+    <meta name="twitter:description" content="Clean, fast, SEO-optimized websites for small businesses and individuals.">
+    <meta name="twitter:image" content="https://www.yourdomain.com/images/preview.jpg">
+
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://www.yourdomain.com/">
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
+
+    <!-- Local Business / Service Schema -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "ProfessionalService",
+      "name": "Carson Web Design",
+      "description": "SEO-focused web design and development for small businesses and individuals. Modern, mobile-first, and optimized for search.",
+      "url": "https://www.yourdomain.com/",
+      "areaServed": "Novato, California",
+      "serviceType": "Web Design, SEO, Website Maintenance",
+      "founder": "Carson",
+      "sameAs": []
+    }
+    </script>
+</head>
+
+<body>
+
+    <!-- Accessible, semantic header + nav -->
+    <header class="site-header">
+        <div class="header-left">
+            <a href="index.html" class="logo-link" aria-label="Carson Web Design Home">
+                <h1 class="logo">Carson Web Design</h1>
+            </a>
+        </div>
+
+        <div class="header-right">
+            <button class="hamburger" id="hamburgerBtn" aria-label="Toggle navigation menu" aria-expanded="false" aria-controls="mobileMenu">
+                ☰
+            </button>
+        </div>
+
+        <nav class="mobile-menu" id="mobileMenu" aria-label="Main navigation">
+            <a href="index.html">Home</a>
+            <a href="about.html">More About Me</a>
+            <a href="quote.html">Get a Quote</a>
+            <a href="portfolio.html">Portfolio</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+    </header>
+
+    <main>
+
+        <!-- Hero / primary keyword section -->
+        <section class="intro" id="intro">
+            <h2>SEO‑Focused Web Design for Small Businesses</h2>
+            <p>
+                Hi, I’m Carson. I build clean, modern, mobile‑first websites that are fully optimized for search engines.
+                I work with individuals and small businesses who want a professional online presence that actually gets found.
+            </p>
+            <p>
+                Because I also help my wife run two small businesses, I understand how hard it is to get your name out there.
+                That’s why every site I build is designed to support long‑term growth, not just look good on launch day.
+            </p>
+        </section>
+
+        <!-- Why hire me / SEO explanation -->
+        <section class="why-hire" id="why-hire">
+            <h2>Why You Want Me Building Your Website</h2>
+            <p>
+                I specialize in <strong>SEO (Search Engine Optimization)</strong> — the process of structuring and optimizing your website so search engines can understand it and rank it higher.
+                A well‑optimized site loads quickly, looks great on mobile, and uses the right content structure so customers can find you when they search.
+            </p>
+            <p>
+                The goal is simple: when someone searches for your type of business, <strong>your website becomes one of the first results they see.</strong>
+            </p>
+        </section>
+
+        <!-- Clear calls to action -->
+        <section class="cta" id="cta">
+            <a class="button" href="quote.html">Request a Custom Quote</a>
+            <a class="portfolio-link" href="portfolio.html">View Websites I’ve Built</a>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>© 2026 Carson Web Design — SEO‑Focused, Mobile‑First Websites for Small Businesses</p>
+    </footer>
+
+    <script>
+        const btn = document.getElementById('hamburgerBtn');
+        const menu = document.getElementById('mobileMenu');
+
+        btn.addEventListener('click', () => {
+            const isOpen = menu.classList.toggle('open');
+            btn.setAttribute('aria-expanded', isOpen ? 'true' : 'false');
+        });
+    </script>
+
+</body>
+</html>
