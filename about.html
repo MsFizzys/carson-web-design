@@ -1,0 +1,730 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- ══ Primary SEO ══ -->
+  <title>About Carson Dohemann | Ascend Web Studio</title>
+  <meta name="description" content="Meet Carson Dohemann — Marin County native, web designer, and founder of Ascend Web Studio. A story of resilience, passion, and building websites that grow businesses." />
+  <meta name="keywords" content="Carson Dohemann, web designer Marin County, about Ascend Web Studio, SEO web design, Marin County web developer" />
+  <meta name="robots" content="index, follow" />
+  <link rel="canonical" href="https://ascendwebstudio.com/about.html" />
+  <meta name="author" content="Carson Dohemann" />
+
+  <!-- ══ Open Graph ══ -->
+  <meta property="og:type" content="profile" />
+  <meta property="og:url" content="https://ascendwebstudio.com/about.html" />
+  <meta property="og:title" content="About Carson Dohemann | Ascend Web Studio" />
+  <meta property="og:description" content="Marin County native, web designer, and founder of Ascend Web Studio. A story of resilience, passion, and building websites that grow real businesses." />
+  <meta property="og:image" content="https://ascendwebstudio.com/og-image.jpg" />
+  <meta property="og:locale" content="en_US" />
+  <meta property="og:site_name" content="Ascend Web Studio" />
+
+  <!-- ══ Twitter / X Card ══ -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="About Carson Dohemann | Ascend Web Studio" />
+  <meta name="twitter:description" content="Marin County native, web designer, and founder of Ascend Web Studio." />
+  <meta name="twitter:image" content="https://ascendwebstudio.com/og-image.jpg" />
+
+  <!-- ══ Mobile & PWA ══ -->
+  <meta name="theme-color" content="#0b4f5c" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-title" content="Ascend Web Studio" />
+
+  <!-- ══ Fonts ══ -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="style.css" />
+
+  <!-- ══ Structured Data: Person ══ -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Carson Dohemann",
+    "jobTitle": "Web Designer & SEO Strategist",
+    "description": "Marin County native and founder of Ascend Web Studio, building SEO-first websites for small businesses.",
+    "url": "https://ascendwebstudio.com/about.html",
+    "worksFor": {
+      "@type": "Organization",
+      "name": "Ascend Web Studio",
+      "url": "https://ascendwebstudio.com"
+    },
+    "knowsAbout": ["SEO", "Web Design", "Website Maintenance", "Small Business Marketing"],
+    "address": {
+      "@type": "PostalAddress",
+      "addressRegion": "CA",
+      "addressLocality": "Marin County",
+      "addressCountry": "US"
+    }
+  }
+  </script>
+
+  <!-- ══ Breadcrumb Schema ══ -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      {
+        "@type": "ListItem",
+        "position": 1,
+        "name": "Home",
+        "item": "https://ascendwebstudio.com/"
+      },
+      {
+        "@type": "ListItem",
+        "position": 2,
+        "name": "About",
+        "item": "https://ascendwebstudio.com/about.html"
+      }
+    ]
+  }
+  </script>
+
+  <style>
+    /* ══════════════════════════════════════════
+       ABOUT PAGE — teal body, gold & white accents
+       ══════════════════════════════════════════ */
+
+    /* ── Breadcrumb ── */
+    .breadcrumb {
+      background: rgba(255,255,255,0.05);
+      border-bottom: 1px solid rgba(201,168,76,0.2);
+      padding: 12px 40px;
+      position: relative;
+      z-index: 1;
+    }
+    .breadcrumb-inner {
+      max-width: var(--max-width);
+      margin: 0 auto;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      font-size: 0.78rem;
+      color: rgba(192,234,240,0.5);
+      font-family: var(--font-body);
+    }
+    .breadcrumb-inner a { color: var(--gold); font-weight: 500; }
+    .breadcrumb-inner a:hover { color: var(--gold-light); }
+    .breadcrumb-sep { color: rgba(192,234,240,0.3); }
+
+    /* ── Page Hero ── */
+    .about-page-hero {
+      padding: 80px 40px 60px;
+      text-align: center;
+      position: relative;
+      z-index: 1;
+      border-bottom: 1px solid rgba(201,168,76,0.15);
+    }
+    .about-page-hero h1 {
+      color: var(--cream);
+      margin-bottom: 14px;
+    }
+    .about-page-hero h1 em {
+      font-style: italic;
+      color: var(--gold-light);
+    }
+    .about-page-hero p {
+      color: rgba(192,234,240,0.7);
+      max-width: 540px;
+      margin: 0 auto;
+    }
+
+    /* ── Photo pair ── */
+    .photo-section {
+      padding: 60px 40px 0;
+      position: relative;
+      z-index: 1;
+    }
+    .photo-grid {
+      max-width: var(--max-width);
+      margin: 0 auto;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 24px;
+    }
+    .photo-card {
+      position: relative;
+      border-radius: 4px;
+      overflow: hidden;
+      border: 1px solid rgba(201,168,76,0.25);
+      box-shadow: 0 8px 40px rgba(0,0,0,0.25);
+      aspect-ratio: 4 / 3;
+      background: rgba(255,255,255,0.04);
+    }
+    .photo-card img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
+      transition: transform 0.5s ease;
+    }
+    .photo-card:hover img {
+      transform: scale(1.03);
+    }
+    /* Placeholder when no real photo yet */
+    .photo-placeholder {
+      width: 100%;
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: 14px;
+      background: linear-gradient(135deg, rgba(26,154,170,0.12), rgba(139,94,60,0.08));
+      min-height: 280px;
+    }
+    .photo-placeholder-icon {
+      width: 64px;
+      height: 64px;
+      border-radius: 50%;
+      border: 2px dashed rgba(201,168,76,0.4);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 1.6rem;
+    }
+    .photo-placeholder p {
+      font-size: 0.72rem;
+      font-weight: 600;
+      letter-spacing: 0.15em;
+      text-transform: uppercase;
+      color: rgba(192,234,240,0.4);
+      text-align: center;
+      padding: 0 20px;
+    }
+    /* Caption bar */
+    .photo-caption {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      background: linear-gradient(to top, rgba(11,79,92,0.92) 0%, transparent 100%);
+      padding: 28px 20px 16px;
+      display: flex;
+      align-items: flex-end;
+      gap: 10px;
+    }
+    .photo-caption-dot {
+      width: 6px;
+      height: 6px;
+      border-radius: 50%;
+      background: var(--gold);
+      flex-shrink: 0;
+      margin-bottom: 3px;
+    }
+    .photo-caption-text {
+      font-family: var(--font-body);
+      font-size: 0.72rem;
+      font-weight: 600;
+      letter-spacing: 0.18em;
+      text-transform: uppercase;
+      color: rgba(253,248,240,0.85);
+    }
+
+    /* ── Story section ── */
+    .story-section {
+      padding: 70px 40px 80px;
+      position: relative;
+      z-index: 1;
+    }
+    .story-inner {
+      max-width: var(--max-width);
+      margin: 0 auto;
+      display: grid;
+      grid-template-columns: 1fr 340px;
+      gap: 70px;
+      align-items: start;
+    }
+
+    /* Main story text */
+    .story-text {}
+    .story-eyebrow {
+      font-family: var(--font-body);
+      font-size: 0.68rem;
+      font-weight: 700;
+      letter-spacing: 0.28em;
+      text-transform: uppercase;
+      color: var(--gold);
+      display: block;
+      margin-bottom: 14px;
+    }
+    .story-text h2 {
+      color: var(--cream);
+      margin-bottom: 28px;
+      font-size: clamp(1.8rem, 3vw, 2.4rem);
+    }
+    .story-text h2 em {
+      font-style: italic;
+      color: var(--gold-light);
+    }
+    .story-divider {
+      width: 50px;
+      height: 1px;
+      background: linear-gradient(to right, var(--gold), transparent);
+      margin-bottom: 28px;
+    }
+    .story-body p {
+      color: rgba(192,234,240,0.82);
+      font-size: 1rem;
+      line-height: 1.95;
+      margin-bottom: 22px;
+    }
+    .story-body p:last-child { margin-bottom: 0; }
+    .story-body strong {
+      color: var(--gold-light);
+      font-weight: 500;
+    }
+    .story-body em {
+      font-style: italic;
+      color: rgba(192,234,240,0.95);
+    }
+
+    /* Sidebar */
+    .story-sidebar {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+    }
+    .sidebar-card {
+      background: rgba(255,255,255,0.04);
+      border: 1px solid rgba(201,168,76,0.22);
+      border-radius: 4px;
+      padding: 28px 26px;
+      transition: border-color 0.3s ease;
+    }
+    .sidebar-card:hover {
+      border-color: rgba(201,168,76,0.45);
+    }
+    .sidebar-card-label {
+      font-family: var(--font-body);
+      font-size: 0.62rem;
+      font-weight: 700;
+      letter-spacing: 0.22em;
+      text-transform: uppercase;
+      color: var(--gold);
+      display: block;
+      margin-bottom: 10px;
+    }
+    .sidebar-card h3 {
+      font-family: var(--font-display);
+      font-size: 1.1rem;
+      font-weight: 400;
+      color: var(--cream);
+      margin-bottom: 8px;
+    }
+    .sidebar-card p {
+      font-size: 0.86rem;
+      color: rgba(192,234,240,0.65);
+      line-height: 1.7;
+    }
+    .sidebar-card a {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      font-size: 0.75rem;
+      font-weight: 600;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: var(--gold);
+      margin-top: 12px;
+      transition: gap 0.2s ease;
+    }
+    .sidebar-card a:hover { gap: 10px; }
+
+    /* Values list */
+    .values-list {
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      margin-top: 4px;
+    }
+    .values-list li {
+      display: flex;
+      align-items: flex-start;
+      gap: 10px;
+      font-size: 0.88rem;
+      color: rgba(192,234,240,0.75);
+      line-height: 1.5;
+    }
+    .values-list li::before {
+      content: '';
+      width: 5px;
+      height: 5px;
+      border-radius: 50%;
+      background: var(--gold);
+      flex-shrink: 0;
+      margin-top: 7px;
+    }
+
+    /* ── CTA strip ── */
+    .about-cta {
+      padding: 70px 40px;
+      text-align: center;
+      border-top: 1px solid rgba(201,168,76,0.15);
+      position: relative;
+      z-index: 1;
+    }
+    .about-cta h2 {
+      color: var(--cream);
+      margin-bottom: 16px;
+    }
+    .about-cta h2 em {
+      font-style: italic;
+      color: var(--gold-light);
+    }
+    .about-cta p {
+      color: rgba(192,234,240,0.7);
+      max-width: 520px;
+      margin: 0 auto 36px;
+    }
+
+    /* ── Responsive ── */
+    @media (max-width: 900px) {
+      .story-inner {
+        grid-template-columns: 1fr;
+        gap: 40px;
+      }
+      .story-sidebar {
+        flex-direction: row;
+        flex-wrap: wrap;
+      }
+      .sidebar-card { flex: 1 1 240px; }
+    }
+
+    @media (max-width: 640px) {
+      .photo-grid {
+        grid-template-columns: 1fr;
+        gap: 16px;
+      }
+      .photo-section { padding: 40px 16px 0; }
+      .story-section { padding: 50px 16px 60px; }
+      .about-page-hero { padding: 60px 20px 50px; }
+      .about-cta { padding: 50px 20px; }
+      .breadcrumb { padding: 10px 20px; }
+      .story-sidebar { flex-direction: column; }
+    }
+  </style>
+</head>
+
+<body>
+
+  <a href="#main-content" class="skip-link">Skip to main content</a>
+
+  <!-- ══════════════════ HEADER ══════════════════ -->
+  <header role="banner">
+    <div class="header-inner">
+      <a href="index.html" class="logo" aria-label="Ascend Web Studio — Go to homepage">
+        Ascend Web Studio
+        <span>Website Design &amp; Strategy</span>
+      </a>
+      <button
+        class="hamburger"
+        id="hamburger"
+        aria-label="Open navigation menu"
+        aria-expanded="false"
+        aria-controls="navDropdown">
+        <span class="bar" aria-hidden="true"></span>
+        <span class="bar" aria-hidden="true"></span>
+        <span class="bar" aria-hidden="true"></span>
+      </button>
+    </div>
+  </header>
+
+  <div class="nav-overlay" id="navOverlay" aria-hidden="true"></div>
+  <nav class="nav-dropdown" id="navDropdown" aria-label="Primary navigation" aria-hidden="true">
+    <a href="index.html">Home</a>
+    <a href="about.html" aria-current="page">About Me</a>
+    <a href="references.html">Our Work</a>
+    <a href="quote.html" class="nav-cta">Get a Quote</a>
+  </nav>
+
+  <!-- ══════════════════ MAIN ══════════════════ -->
+  <main id="main-content">
+
+    <!-- Breadcrumb -->
+    <nav class="breadcrumb" aria-label="Breadcrumb">
+      <div class="breadcrumb-inner">
+        <a href="index.html">Home</a>
+        <span class="breadcrumb-sep" aria-hidden="true">›</span>
+        <span aria-current="page">About Me</span>
+      </div>
+    </nav>
+
+    <!-- Page Hero -->
+    <section class="about-page-hero" aria-labelledby="about-heading">
+      <span class="hero-eyebrow reveal">The Person Behind the Work</span>
+      <h1 class="reveal" id="about-heading">
+        Built From<br><em>the Ground Up</em>
+      </h1>
+      <div class="hero-divider reveal" aria-hidden="true"></div>
+      <p class="reveal">
+        Marin County native. Husband. Business owner. Web designer.
+        Here's the story behind why I do what I do.
+      </p>
+    </section>
+
+    <!-- Photos -->
+    <section class="photo-section" aria-label="Photos of Carson Dohemann">
+      <div class="photo-grid">
+
+        <figure class="photo-card reveal">
+          <!--
+            PHOTO 1: Replace the div below with:
+            <img src="your-photo-1.jpg" alt="Carson Dohemann — [describe the photo]" loading="lazy" />
+          -->
+          <div class="photo-placeholder" role="img" aria-label="Photo placeholder — About Photo One">
+            <div class="photo-placeholder-icon" aria-hidden="true">📷</div>
+            <p>Add your photo here<br>replace with an &lt;img&gt; tag</p>
+          </div>
+          <figcaption class="photo-caption">
+            <span class="photo-caption-dot" aria-hidden="true"></span>
+            <span class="photo-caption-text">About — Photo One</span>
+          </figcaption>
+        </figure>
+
+        <figure class="photo-card reveal">
+          <!--
+            PHOTO 2: Replace the div below with:
+            <img src="your-photo-2.jpg" alt="Carson Dohemann — [describe the photo]" loading="lazy" />
+          -->
+          <div class="photo-placeholder" role="img" aria-label="Photo placeholder — About Photo Two">
+            <div class="photo-placeholder-icon" aria-hidden="true">📷</div>
+            <p>Add your photo here<br>replace with an &lt;img&gt; tag</p>
+          </div>
+          <figcaption class="photo-caption">
+            <span class="photo-caption-dot" aria-hidden="true"></span>
+            <span class="photo-caption-text">About — Photo Two</span>
+          </figcaption>
+        </figure>
+
+      </div>
+    </section>
+
+    <!-- Story -->
+    <section class="story-section" aria-labelledby="story-heading">
+      <div class="story-inner">
+
+        <!-- Main narrative -->
+        <div class="story-text reveal">
+          <span class="story-eyebrow">My Story</span>
+          <h2 id="story-heading">
+            Rooted in Marin.<br><em>Driven by Purpose.</em>
+          </h2>
+          <div class="story-divider" aria-hidden="true"></div>
+
+          <div class="story-body">
+            <p>
+              I'm Carson Dohemann — born and raised in Marin County, California.
+              Growing up here meant an active life was just part of the deal:
+              snowboarding, surfing, hiking the hills I knew by heart. Before
+              web design, I spent years working as a plumber in San Francisco with
+              <strong>Local 38</strong>, a trade that taught me discipline,
+              problem-solving, and the satisfaction of building something that
+              works exactly the way it should.
+            </p>
+
+            <p>
+              In 2019, my life changed in an instant. I broke my vertebrae diving
+              into the water at the beach, an injury that affected my spinal cord
+              and left me paralyzed and in a wheelchair. There's no clean way to
+              describe what that transition feels like — losing the sports you love,
+              rebuilding your identity from the ground up, and learning to find
+              meaning in a life that looks completely different than the one you'd
+              planned. <em>It takes time. It takes honesty. And it takes the right
+              people beside you.</em>
+            </p>
+
+            <p>
+              My wife has been everything through that journey. Together, we made a
+              choice not to wait for life to return to what it was, but to build
+              something new with what we have. We launched two businesses:
+              <strong>Made in Marin</strong>, a clothing brand rooted in the
+              landscape and culture of the county we call home, and
+              <strong>Ms. Fizzy's</strong>, Marin County's first dirty soda
+              catering company, bringing handcrafted sodas and iced coffees to
+              events across the North Bay.
+            </p>
+
+            <p>
+              It was building the website for Ms. Fizzy's that lit the spark.
+              I discovered that I had a real passion for web design — the
+              creativity of it, the strategy behind it, and most importantly,
+              the results it produces. I watched firsthand how a well-built,
+              properly optimized website could open doors and bring in customers
+              who would have never found us otherwise. <strong>That experience
+              changed everything.</strong>
+            </p>
+
+            <p>
+              Since then, I've been designing websites for other businesses in my
+              spare time, and the pattern holds every time: a thoughtfully built,
+              SEO-forward website is one of the most powerful investments a small
+              business can make. Web design has become more than work for me —
+              it has filled a space that snowboarding and surfing once occupied,
+              and it gives me a way to channel that same drive and competitive
+              spirit into something that genuinely helps people.
+            </p>
+
+            <p>
+              If you're ready to build a website that actually works for your
+              business — one that shows up in search, earns trust, and turns
+              visitors into customers — I'd love to be the one to build it with you.
+            </p>
+          </div>
+        </div>
+
+        <!-- Sidebar -->
+        <aside class="story-sidebar" aria-label="Quick facts about Carson">
+
+          <div class="sidebar-card reveal">
+            <span class="sidebar-card-label">Background</span>
+            <h3>Marin County Native</h3>
+            <ul class="values-list" aria-label="Background details">
+              <li>Born &amp; raised in Marin County, CA</li>
+              <li>Former Local 38 plumber, San Francisco</li>
+              <li>Husband &amp; small business owner</li>
+              <li>Passionate about community &amp; craft</li>
+            </ul>
+          </div>
+
+          <div class="sidebar-card reveal">
+            <span class="sidebar-card-label">My Businesses</span>
+            <h3>Made in Marin</h3>
+            <p>A clothing brand rooted in Marin County culture, landscape, and identity.</p>
+            <h3 style="margin-top: 16px;">Ms. Fizzy's</h3>
+            <p>Marin's first dirty soda catering company — mobile cart events across the North Bay.</p>
+            <a href="references.html">See our websites →</a>
+          </div>
+
+          <div class="sidebar-card reveal">
+            <span class="sidebar-card-label">What I Build</span>
+            <h3>SEO-First Websites</h3>
+            <ul class="values-list" aria-label="Services">
+              <li>Custom website design &amp; development</li>
+              <li>On-page &amp; technical SEO</li>
+              <li>Mobile-first, fast-loading builds</li>
+              <li>Ongoing maintenance &amp; optimization</li>
+            </ul>
+            <a href="quote.html">Get a free quote →</a>
+          </div>
+
+        </aside>
+
+      </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="about-cta" aria-labelledby="about-cta-heading">
+      <div class="container">
+        <span class="section-label reveal">Let's Work Together</span>
+        <h2 class="reveal" id="about-cta-heading">
+          Ready to Build Something<br><em>That Moves Your Business Forward?</em>
+        </h2>
+        <p class="reveal">
+          I bring the same care and commitment to every website I build that I bring
+          to everything else in my life. Let's talk about yours.
+        </p>
+        <div class="cta-group reveal">
+          <a href="quote.html" class="btn btn-gold">Get a Free Quote</a>
+          <a href="references.html" class="btn btn-outline">See Our Work</a>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ══════════════════ FOOTER ══════════════════ -->
+  <footer role="contentinfo">
+    <div class="footer-inner">
+      <div class="footer-brand">
+        <a href="index.html" class="logo" aria-label="Ascend Web Studio — Home">
+          Ascend Web Studio
+          <span>Website Design &amp; Strategy</span>
+        </a>
+        <p>
+          SEO-first websites for businesses and individuals who want their
+          online presence to actually grow their bottom line.
+        </p>
+      </div>
+      <nav class="footer-col" aria-label="Footer site links">
+        <h4>Navigate</h4>
+        <a href="index.html">Home</a>
+        <a href="about.html" aria-current="page">About Me</a>
+        <a href="references.html">Our Work</a>
+        <a href="quote.html">Get a Quote</a>
+      </nav>
+      <div class="footer-col">
+        <h4>Contact</h4>
+        <a href="mailto:hello@ascendwebstudio.com">hello@ascendwebstudio.com</a>
+        <a href="quote.html">Request a Consultation</a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p><small>&copy; 2026 Ascend Web Studio. All rights reserved.</small></p>
+      <a href="quote.html">Get Started →</a>
+    </div>
+  </footer>
+
+  <!-- ══════════════════ SCRIPTS ══════════════════ -->
+  <script>
+    const prefersReduced = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+    const hamburger = document.getElementById('hamburger');
+    const navDropdown = document.getElementById('navDropdown');
+    const navOverlay = document.getElementById('navOverlay');
+
+    function toggleNav(open) {
+      hamburger.classList.toggle('open', open);
+      hamburger.setAttribute('aria-expanded', String(open));
+      navDropdown.classList.toggle('open', open);
+      navDropdown.setAttribute('aria-hidden', String(!open));
+      navOverlay.setAttribute('aria-hidden', String(!open));
+      navOverlay.classList.toggle('open', open);
+      document.body.style.overflow = open ? 'hidden' : '';
+      if (open) {
+        const firstLink = navDropdown.querySelector('a');
+        if (firstLink) firstLink.focus();
+      } else {
+        hamburger.focus();
+      }
+    }
+
+    hamburger.addEventListener('click', () => toggleNav(!hamburger.classList.contains('open')));
+    navOverlay.addEventListener('click', () => toggleNav(false));
+    document.addEventListener('keydown', (e) => { if (e.key === 'Escape') toggleNav(false); });
+
+    navDropdown.addEventListener('keydown', (e) => {
+      if (e.key !== 'Tab') return;
+      const focusable = Array.from(navDropdown.querySelectorAll('a'));
+      const first = focusable[0];
+      const last = focusable[focusable.length - 1];
+      if (e.shiftKey && document.activeElement === first) {
+        e.preventDefault(); last.focus();
+      } else if (!e.shiftKey && document.activeElement === last) {
+        e.preventDefault(); first.focus();
+      }
+    });
+
+    if (prefersReduced) {
+      document.querySelectorAll('.reveal').forEach(el => el.classList.add('visible'));
+    } else {
+      const observer = new IntersectionObserver((entries) => {
+        entries.forEach((entry, i) => {
+          if (entry.isIntersecting) {
+            setTimeout(() => entry.target.classList.add('visible'), i * 90);
+            observer.unobserve(entry.target);
+          }
+        });
+      }, { threshold: 0.08, rootMargin: '0px 0px -40px 0px' });
+      document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
+    }
+  </script>
+
+</body>
+</html>
