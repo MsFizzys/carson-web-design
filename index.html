@@ -3,170 +3,331 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Ascend Web Studio — SEO-First Website Design</title>
-  <meta name="description" content="We build beautiful, SEO-optimized websites that bring new clients to your door. Strategic design meets search engine mastery." />
+
+  <!-- ══ Primary SEO ══ -->
+  <title>Ascend Web Studio | SEO-First Website Design &amp; Maintenance</title>
+  <meta name="description" content="Ascend Web Studio builds beautiful, SEO-optimized websites that bring new clients to your door. We design, build, and maintain websites for businesses across Marin County and beyond." />
+  <meta name="keywords" content="website design, SEO website, web design Marin County, SEO-first websites, website maintenance, small business websites, local SEO" />
+  <meta name="robots" content="index, follow" />
+  <link rel="canonical" href="https://ascendwebstudio.com/" />
+  <meta name="author" content="Ascend Web Studio" />
+
+  <!-- ══ Open Graph ══ -->
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://ascendwebstudio.com/" />
+  <meta property="og:title" content="Ascend Web Studio | SEO-First Website Design" />
+  <meta property="og:description" content="We build beautiful, SEO-optimized websites that bring new clients to your door. Strategic design meets search engine mastery." />
+  <meta property="og:image" content="https://ascendwebstudio.com/og-image.jpg" />
+  <meta property="og:locale" content="en_US" />
+  <meta property="og:site_name" content="Ascend Web Studio" />
+
+  <!-- ══ Twitter / X Card ══ -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Ascend Web Studio | SEO-First Website Design" />
+  <meta name="twitter:description" content="We build beautiful, SEO-optimized websites that bring new clients to your door." />
+  <meta name="twitter:image" content="https://ascendwebstudio.com/og-image.jpg" />
+
+  <!-- ══ Mobile & PWA ══ -->
+  <meta name="theme-color" content="#0b4f5c" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="default" />
+  <meta name="apple-mobile-web-app-title" content="Ascend Web Studio" />
+
+  <!-- ══ Fonts: preconnect for speed, then load ══ -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+
   <link rel="stylesheet" href="style.css" />
+
+  <!-- ══ Structured Data: ProfessionalService ══ -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "ProfessionalService",
+    "name": "Ascend Web Studio",
+    "description": "SEO-first website design, development, and maintenance for businesses and individuals.",
+    "url": "https://ascendwebstudio.com",
+    "logo": "https://ascendwebstudio.com/logo.png",
+    "image": "https://ascendwebstudio.com/og-image.jpg",
+    "priceRange": "$$",
+    "areaServed": [
+      { "@type": "State", "name": "California" }
+    ],
+    "address": {
+      "@type": "PostalAddress",
+      "addressRegion": "CA",
+      "addressCountry": "US"
+    },
+    "offers": {
+      "@type": "Offer",
+      "description": "Custom SEO-optimized website design, development, and ongoing maintenance.",
+      "url": "https://ascendwebstudio.com/quote.html"
+    }
+  }
+  </script>
+
+  <!-- ══ Structured Data: WebSite ══ -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    "url": "https://ascendwebstudio.com/",
+    "name": "Ascend Web Studio"
+  }
+  </script>
+
+  <!-- ══ FAQ Schema (boosts Google rich results) ══ -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "What makes Ascend Web Studio different from other web designers?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "We build SEO into every layer of your website from day one — not as an add-on. Every page is engineered to rank in Google, load fast, and convert visitors into clients."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Do you offer website maintenance after launch?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Yes. We offer ongoing maintenance packages to keep your site secure, updated, and continuously optimized for search engines."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "How long does it take to build a website?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Most small business websites are completed within 2–4 weeks depending on scope and how quickly content is provided."
+        }
+      }
+    ]
+  }
+  </script>
 </head>
+
 <body>
 
+  <!-- Skip to main content — accessibility + crawlability -->
+  <a href="#main-content" class="skip-link">Skip to main content</a>
+
   <!-- ══════════════════ HEADER ══════════════════ -->
-  <header>
+  <header role="banner">
     <div class="header-inner">
-      <a href="index.html" class="logo">
+      <a href="index.html" class="logo" aria-label="Ascend Web Studio — Go to homepage">
         Ascend Web Studio
         <span>Website Design &amp; Strategy</span>
       </a>
 
-      <button class="hamburger" id="hamburger" aria-label="Open menu" aria-expanded="false">
-        <span class="bar"></span>
-        <span class="bar"></span>
-        <span class="bar"></span>
+      <button
+        class="hamburger"
+        id="hamburger"
+        aria-label="Open navigation menu"
+        aria-expanded="false"
+        aria-controls="navDropdown">
+        <span class="bar" aria-hidden="true"></span>
+        <span class="bar" aria-hidden="true"></span>
+        <span class="bar" aria-hidden="true"></span>
       </button>
     </div>
   </header>
 
-  <!-- Slide-out navigation -->
-  <div class="nav-overlay" id="navOverlay"></div>
-  <nav class="nav-dropdown" id="navDropdown" aria-hidden="true">
-    <a href="index.html">Home</a>
+  <div class="nav-overlay" id="navOverlay" aria-hidden="true"></div>
+  <nav class="nav-dropdown" id="navDropdown" aria-label="Primary navigation" aria-hidden="true">
+    <a href="index.html" aria-current="page">Home</a>
     <a href="about.html">About Me</a>
-    <a href="references.html">References</a>
+    <a href="references.html">Our Work</a>
     <a href="quote.html" class="nav-cta">Get a Quote</a>
   </nav>
 
-  <!-- ══════════════════ HERO ══════════════════ -->
-  <section class="hero reveal">
-    <div class="container">
-      <span class="hero-eyebrow">SEO-First Web Design</span>
-      <h1>Your Website Should<br><em>Work While You Sleep</em></h1>
-      <div class="hero-divider"></div>
-      <p>
-        Most businesses have a website. Very few have a website that actually
-        <em>finds them customers.</em> We build yours differently — every page,
-        every word, every line of code is crafted to rank higher, convert better,
-        and grow your business around the clock.
-      </p>
-      <div class="cta-group">
-        <a href="references.html" class="btn btn-gold">See Our Work</a>
-        <a href="quote.html" class="btn btn-outline">Get a Free Quote</a>
+  <!-- ══════════════════ MAIN ══════════════════ -->
+  <main id="main-content">
+
+    <!-- ── Hero ── -->
+    <section class="hero reveal" aria-labelledby="hero-heading">
+      <div class="container">
+        <span class="hero-eyebrow">SEO-First Web Design &amp; Maintenance</span>
+        <h1 id="hero-heading">
+          Your Website Should<br><em>Work While You Sleep</em>
+        </h1>
+        <div class="hero-divider" aria-hidden="true"></div>
+        <p>
+          Most businesses have a website. Very few have one that actually
+          <strong>finds them customers.</strong> We build yours differently — every page,
+          every word, and every line of code is crafted to rank higher, convert better,
+          and grow your business around the clock.
+        </p>
+        <div class="cta-group">
+          <a href="references.html" class="btn btn-gold">See Our Work</a>
+          <a href="quote.html" class="btn btn-outline">Get a Free Quote</a>
+        </div>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <!-- ══════════════════ SEO VALUE PROP ══════════════════ -->
-  <section class="features">
-    <div class="container">
-      <span class="section-label reveal">Why It Matters</span>
-      <h2 class="section-title reveal">Built to Be Found.<br>Designed to Convert.</h2>
-      <p class="section-sub reveal">
-        A beautiful website with no traffic is a billboard in the desert.
-        We engineer your site to show up where your ideal customers are already searching.
-      </p>
+    <!-- ── Features ── -->
+    <section class="features" aria-labelledby="features-heading">
+      <div class="container">
+        <span class="section-label reveal">Why It Matters</span>
+        <h2 class="section-title reveal" id="features-heading">
+          Built to Be Found.<br>Designed to Convert.
+        </h2>
+        <p class="section-sub reveal">
+          A beautiful website with no traffic is a billboard in the desert.
+          We engineer your site to show up where your ideal customers are already searching.
+        </p>
 
-      <div class="features-grid">
+        <div class="features-grid">
 
-        <div class="feature-card reveal">
-          <span class="feature-icon">🔍</span>
-          <h3>SEO From the Ground Up</h3>
-          <p>
-            Search engine optimization isn't an afterthought — it's baked into
-            every decision we make, from site architecture and page speed to
-            keyword strategy and metadata. Your site is built to rank.
-          </p>
+          <article class="feature-card reveal">
+            <span class="feature-icon" aria-hidden="true">🔍</span>
+            <h3>SEO From the Ground Up</h3>
+            <p>
+              Search engine optimization isn't an afterthought — it's baked into
+              every decision we make, from site architecture and page speed to
+              keyword strategy and metadata. Your site is built to rank.
+            </p>
+          </article>
+
+          <article class="feature-card reveal">
+            <span class="feature-icon" aria-hidden="true">📈</span>
+            <h3>Strategic Visibility</h3>
+            <p>
+              We identify the exact phrases your potential customers type into Google,
+              then build content and structure around those opportunities — so the
+              right people find you, not your competitors.
+            </p>
+          </article>
+
+          <article class="feature-card reveal">
+            <span class="feature-icon" aria-hidden="true">⚡</span>
+            <h3>Performance That Google Rewards</h3>
+            <p>
+              Page speed is a direct ranking factor. We write clean, lightweight code
+              and optimize every asset so your site loads fast — keeping both visitors
+              and search engines happy.
+            </p>
+          </article>
+
+          <article class="feature-card reveal">
+            <span class="feature-icon" aria-hidden="true">🤝</span>
+            <h3>Ongoing Partnership</h3>
+            <p>
+              We don't hand you a website and disappear. We maintain, update, and
+              continuously optimize your site — keeping it secure, current, and
+              climbing the rankings month after month.
+            </p>
+          </article>
+
+          <article class="feature-card reveal">
+            <span class="feature-icon" aria-hidden="true">📱</span>
+            <h3>Mobile-First Design</h3>
+            <p>
+              Over 60% of searches happen on mobile. Every site we build looks and
+              performs perfectly on every screen size — because Google penalizes sites
+              that don't, and so do your visitors.
+            </p>
+          </article>
+
+          <article class="feature-card reveal">
+            <span class="feature-icon" aria-hidden="true">💡</span>
+            <h3>Content That Converts</h3>
+            <p>
+              Getting traffic is half the battle. We craft compelling copy and
+              strategic calls-to-action that turn visitors into inquiries,
+              and inquiries into paying clients.
+            </p>
+          </article>
+
         </div>
-
-        <div class="feature-card reveal">
-          <span class="feature-icon">📈</span>
-          <h3>Strategic Visibility</h3>
-          <p>
-            We work with you to identify the exact phrases your potential customers
-            type into Google, then build content and structure around those
-            opportunities so the right people find you — not your competitors.
-          </p>
-        </div>
-
-        <div class="feature-card reveal">
-          <span class="feature-icon">⚡</span>
-          <h3>Performance That Google Rewards</h3>
-          <p>
-            Page speed is a ranking factor. We write clean, lightweight code and
-            optimize every image and asset so your site loads fast — keeping both
-            visitors and search engines happy.
-          </p>
-        </div>
-
-        <div class="feature-card reveal">
-          <span class="feature-icon">🤝</span>
-          <h3>Ongoing Partnership</h3>
-          <p>
-            We don't hand you a website and disappear. We maintain, update, and
-            continuously optimize your site — keeping it secure, current, and
-            climbing the search rankings month after month.
-          </p>
-        </div>
-
-        <div class="feature-card reveal">
-          <span class="feature-icon">📱</span>
-          <h3>Mobile-First Design</h3>
-          <p>
-            Over 60% of searches happen on mobile. Every site we build looks and
-            performs perfectly on every device — because Google penalizes sites
-            that don't, and so do your visitors.
-          </p>
-        </div>
-
-        <div class="feature-card reveal">
-          <span class="feature-icon">💡</span>
-          <h3>Content That Converts</h3>
-          <p>
-            Getting traffic is half the battle. We craft compelling copy and
-            strategic calls-to-action that turn visitors into inquiries,
-            and inquiries into paying clients.
-          </p>
-        </div>
-
       </div>
-    </div>
-  </section>
+    </section>
 
-  <!-- ══════════════════ CTA SECTION ══════════════════ -->
-  <section class="cta-section">
-    <div class="container">
-      <span class="section-label reveal">Ready to Grow?</span>
-      <h2 class="reveal">Let's Build Something<br><em>That Works for You</em></h2>
-      <p class="reveal">
-        Browse websites we've built for real businesses, or tell us about your
-        project and get a personalized quote — no pressure, no commitment.
-      </p>
-      <div class="cta-group reveal">
-        <a href="references.html" class="btn btn-outline">View Our Portfolio</a>
-        <a href="quote.html" class="btn btn-gold">Request a Quote</a>
+    <!-- ── FAQ (feeds FAQ schema above) ── -->
+    <section class="features" aria-labelledby="faq-heading" style="padding-top: 0;">
+      <div class="container">
+        <span class="section-label reveal">Common Questions</span>
+        <h2 class="section-title reveal" id="faq-heading">What to Expect</h2>
+
+        <div class="features-grid" style="margin-top: 30px;">
+
+          <article class="feature-card reveal">
+            <h3>What makes us different?</h3>
+            <p>
+              We build SEO into every layer of your site from day one — not as an
+              add-on. Every page is engineered to rank in Google, load fast, and
+              turn visitors into clients.
+            </p>
+          </article>
+
+          <article class="feature-card reveal">
+            <h3>Do you maintain sites after launch?</h3>
+            <p>
+              Yes. We offer ongoing maintenance to keep your site secure, updated,
+              and continuously optimized so your rankings only improve over time.
+            </p>
+          </article>
+
+          <article class="feature-card reveal">
+            <h3>How long does a website take?</h3>
+            <p>
+              Most small business sites are completed in 2–4 weeks depending on
+              scope and how quickly content is provided. We keep you in the loop
+              every step of the way.
+            </p>
+          </article>
+
+        </div>
       </div>
-    </div>
-  </section>
+    </section>
+
+    <!-- ── CTA ── -->
+    <section class="cta-section" aria-labelledby="cta-heading">
+      <div class="container">
+        <span class="section-label reveal">Ready to Grow?</span>
+        <h2 class="reveal" id="cta-heading">
+          Let's Build Something<br><em>That Works for You</em>
+        </h2>
+        <p class="reveal">
+          Browse websites we've built for real businesses, or tell us about your
+          project and get a personalized quote — no pressure, no commitment.
+        </p>
+        <div class="cta-group reveal">
+          <a href="references.html" class="btn btn-outline">View Our Portfolio</a>
+          <a href="quote.html" class="btn btn-gold">Request a Quote</a>
+        </div>
+      </div>
+    </section>
+
+  </main>
 
   <!-- ══════════════════ FOOTER ══════════════════ -->
-  <footer>
+  <footer role="contentinfo">
     <div class="footer-inner">
 
       <div class="footer-brand">
-        <a href="index.html" class="logo">
+        <a href="index.html" class="logo" aria-label="Ascend Web Studio — Home">
           Ascend Web Studio
           <span>Website Design &amp; Strategy</span>
         </a>
         <p>
-          We build SEO-first websites for businesses and individuals who want their
+          SEO-first websites for businesses and individuals who want their
           online presence to actually grow their bottom line.
         </p>
       </div>
 
-      <div class="footer-col">
+      <nav class="footer-col" aria-label="Footer site links">
         <h4>Navigate</h4>
-        <a href="index.html">Home</a>
+        <a href="index.html" aria-current="page">Home</a>
         <a href="about.html">About Me</a>
-        <a href="references.html">References</a>
+        <a href="references.html">Our Work</a>
         <a href="quote.html">Get a Quote</a>
-      </div>
+      </nav>
 
       <div class="footer-col">
         <h4>Contact</h4>
@@ -177,52 +338,68 @@
     </div>
 
     <div class="footer-bottom">
-      <p>&copy; 2026 Ascend Web Studio. All rights reserved.</p>
+      <p><small>&copy; 2026 Ascend Web Studio. All rights reserved.</small></p>
       <a href="quote.html">Get Started →</a>
     </div>
   </footer>
 
   <!-- ══════════════════ SCRIPTS ══════════════════ -->
   <script>
-    // Hamburger / nav drawer
+    // ── Respect reduced-motion (accessibility + performance) ──
+    const prefersReduced = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+    // ── Nav drawer ──
     const hamburger = document.getElementById('hamburger');
     const navDropdown = document.getElementById('navDropdown');
     const navOverlay = document.getElementById('navOverlay');
 
     function toggleNav(open) {
       hamburger.classList.toggle('open', open);
-      hamburger.setAttribute('aria-expanded', open);
+      hamburger.setAttribute('aria-expanded', String(open));
       navDropdown.classList.toggle('open', open);
-      navDropdown.setAttribute('aria-hidden', !open);
+      navDropdown.setAttribute('aria-hidden', String(!open));
+      navOverlay.setAttribute('aria-hidden', String(!open));
       navOverlay.classList.toggle('open', open);
       document.body.style.overflow = open ? 'hidden' : '';
+      if (open) {
+        const firstLink = navDropdown.querySelector('a');
+        if (firstLink) firstLink.focus();
+      } else {
+        hamburger.focus();
+      }
     }
 
-    hamburger.addEventListener('click', () => {
-      const isOpen = hamburger.classList.contains('open');
-      toggleNav(!isOpen);
-    });
-
+    hamburger.addEventListener('click', () => toggleNav(!hamburger.classList.contains('open')));
     navOverlay.addEventListener('click', () => toggleNav(false));
+    document.addEventListener('keydown', (e) => { if (e.key === 'Escape') toggleNav(false); });
 
-    document.addEventListener('keydown', (e) => {
-      if (e.key === 'Escape') toggleNav(false);
+    // Focus trap inside nav
+    navDropdown.addEventListener('keydown', (e) => {
+      if (e.key !== 'Tab') return;
+      const focusable = Array.from(navDropdown.querySelectorAll('a'));
+      const first = focusable[0];
+      const last = focusable[focusable.length - 1];
+      if (e.shiftKey && document.activeElement === first) {
+        e.preventDefault(); last.focus();
+      } else if (!e.shiftKey && document.activeElement === last) {
+        e.preventDefault(); first.focus();
+      }
     });
 
-    // Scroll reveal
-    const reveals = document.querySelectorAll('.reveal');
-    const observer = new IntersectionObserver((entries) => {
-      entries.forEach((entry, i) => {
-        if (entry.isIntersecting) {
-          setTimeout(() => {
-            entry.target.classList.add('visible');
-          }, i * 80);
-          observer.unobserve(entry.target);
-        }
-      });
-    }, { threshold: 0.12 });
-
-    reveals.forEach(el => observer.observe(el));
+    // ── Scroll reveal ──
+    if (prefersReduced) {
+      document.querySelectorAll('.reveal').forEach(el => el.classList.add('visible'));
+    } else {
+      const observer = new IntersectionObserver((entries) => {
+        entries.forEach((entry, i) => {
+          if (entry.isIntersecting) {
+            setTimeout(() => entry.target.classList.add('visible'), i * 80);
+            observer.unobserve(entry.target);
+          }
+        });
+      }, { threshold: 0.1, rootMargin: '0px 0px -40px 0px' });
+      document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
+    }
   </script>
 
 </body>
