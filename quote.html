@@ -1,0 +1,1036 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- ══ Primary SEO ══ -->
+  <title>Get a Free Quote | Ascend Web Studio</title>
+  <meta name="description" content="Ready to grow your business online? Request a free website quote from Ascend Web Studio. SEO-first design and development tailored to your budget and goals." />
+  <meta name="keywords" content="get a website quote, web design quote, free website consultation, SEO website pricing, Marin County web designer quote" />
+  <meta name="robots" content="index, follow" />
+  <link rel="canonical" href="https://ascendwebstudio.com/quote.html" />
+  <meta name="author" content="Ascend Web Studio" />
+
+  <!-- ══ Open Graph ══ -->
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://ascendwebstudio.com/quote.html" />
+  <meta property="og:title" content="Get a Free Quote | Ascend Web Studio" />
+  <meta property="og:description" content="Tell us about your project and we'll put together a custom website quote — no obligation, no pressure." />
+  <meta property="og:image" content="https://ascendwebstudio.com/og-image.jpg" />
+  <meta property="og:locale" content="en_US" />
+  <meta property="og:site_name" content="Ascend Web Studio" />
+
+  <!-- ══ Twitter / X Card ══ -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Get a Free Quote | Ascend Web Studio" />
+  <meta name="twitter:description" content="Tell us about your project and get a custom website quote — no obligation." />
+  <meta name="twitter:image" content="https://ascendwebstudio.com/og-image.jpg" />
+
+  <!-- ══ Mobile & PWA ══ -->
+  <meta name="theme-color" content="#c9a84c" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-title" content="Ascend Web Studio" />
+
+  <!-- ══ Fonts ══ -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="style.css" />
+
+  <!-- ══ Structured Data: ContactPage ══ -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "ContactPage",
+    "name": "Get a Free Quote — Ascend Web Studio",
+    "description": "Request a free custom website quote from Ascend Web Studio.",
+    "url": "https://ascendwebstudio.com/quote.html",
+    "mainEntity": {
+      "@type": "ProfessionalService",
+      "name": "Ascend Web Studio",
+      "url": "https://ascendwebstudio.com",
+      "email": "hello@ascendwebstudio.com",
+      "areaServed": "California"
+    }
+  }
+  </script>
+
+  <!-- ══ Breadcrumb Schema ══ -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      {
+        "@type": "ListItem",
+        "position": 1,
+        "name": "Home",
+        "item": "https://ascendwebstudio.com/"
+      },
+      {
+        "@type": "ListItem",
+        "position": 2,
+        "name": "Get a Quote",
+        "item": "https://ascendwebstudio.com/quote.html"
+      }
+    ]
+  }
+  </script>
+
+  <style>
+    /* ══════════════════════════════════════════
+       QUOTE PAGE — white & gold dominant (matches references)
+       ══════════════════════════════════════════ */
+
+    body {
+      background: var(--cream);
+      color: var(--dark-text);
+    }
+
+    body::before {
+      background:
+        radial-gradient(ellipse at 10% 20%, rgba(201,168,76,0.07) 0%, transparent 55%),
+        radial-gradient(ellipse at 90% 80%, rgba(196,145,90,0.05) 0%, transparent 55%);
+    }
+
+    /* ── Breadcrumb ── */
+    .breadcrumb {
+      background: var(--off-white);
+      border-bottom: 1px solid rgba(201,168,76,0.2);
+      padding: 12px 40px;
+      position: relative;
+      z-index: 1;
+    }
+    .breadcrumb-inner {
+      max-width: var(--max-width);
+      margin: 0 auto;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      font-size: 0.78rem;
+      color: rgba(26,18,8,0.5);
+      font-family: var(--font-body);
+    }
+    .breadcrumb-inner a { color: var(--gold-dark); font-weight: 500; }
+    .breadcrumb-inner a:hover { color: var(--gold); }
+    .breadcrumb-sep { color: rgba(26,18,8,0.3); }
+
+    /* ── Page Hero ── */
+    .quote-hero {
+      background: var(--header-bg);
+      border-bottom: 2px solid var(--gold);
+      padding: 80px 40px 60px;
+      text-align: center;
+    }
+    .quote-hero .hero-eyebrow { color: var(--gold-dark); }
+    .quote-hero h1 {
+      color: var(--dark-text);
+      font-size: clamp(2.2rem, 4.5vw, 3.4rem);
+      margin-bottom: 14px;
+    }
+    .quote-hero h1 em { font-style: italic; color: var(--gold); }
+    .quote-hero .hero-divider {
+      background: linear-gradient(to right, transparent, var(--gold), transparent);
+    }
+    .quote-hero p {
+      color: rgba(26,18,8,0.62);
+      max-width: 560px;
+      margin: 0 auto;
+    }
+
+    /* ── Two-column layout ── */
+    .quote-body {
+      padding: 70px 40px 90px;
+      position: relative;
+      z-index: 1;
+    }
+    .quote-layout {
+      max-width: var(--max-width);
+      margin: 0 auto;
+      display: grid;
+      grid-template-columns: 1fr 340px;
+      gap: 60px;
+      align-items: start;
+    }
+
+    /* ── Form card ── */
+    .form-card {
+      background: #ffffff;
+      border: 1px solid rgba(201,168,76,0.28);
+      border-radius: 6px;
+      padding: 50px 48px;
+      box-shadow: 0 4px 30px rgba(201,168,76,0.08);
+    }
+
+    .form-card h2 {
+      font-family: var(--font-display);
+      font-size: 1.5rem;
+      font-weight: 400;
+      color: var(--dark-text);
+      margin-bottom: 6px;
+    }
+    .form-card > p {
+      color: rgba(26,18,8,0.55);
+      font-size: 0.88rem;
+      margin-bottom: 36px;
+    }
+
+    /* Field groups */
+    .field-group {
+      margin-bottom: 22px;
+    }
+    .field-group label {
+      display: flex;
+      align-items: center;
+      gap: 6px;
+      font-size: 0.7rem;
+      font-weight: 700;
+      letter-spacing: 0.16em;
+      text-transform: uppercase;
+      color: var(--gold-dark);
+      margin-bottom: 8px;
+    }
+    .required-star {
+      color: var(--copper);
+      font-size: 0.75rem;
+      line-height: 1;
+    }
+    .optional-tag {
+      font-size: 0.6rem;
+      font-weight: 500;
+      letter-spacing: 0.1em;
+      color: rgba(26,18,8,0.35);
+      text-transform: uppercase;
+      margin-left: 2px;
+    }
+
+    /* Inputs */
+    .field-group input,
+    .field-group textarea,
+    .field-group select {
+      width: 100%;
+      background: var(--off-white);
+      border: 1.5px solid rgba(201,168,76,0.3);
+      border-radius: 3px;
+      padding: 13px 16px;
+      color: var(--dark-text);
+      font-family: var(--font-body);
+      font-size: 0.93rem;
+      font-weight: 400;
+      transition: border-color 0.25s ease, background 0.25s ease, box-shadow 0.25s ease;
+      outline: none;
+      -webkit-appearance: none;
+      appearance: none;
+    }
+    .field-group input::placeholder,
+    .field-group textarea::placeholder {
+      color: rgba(26,18,8,0.3);
+    }
+    .field-group input:focus,
+    .field-group textarea:focus,
+    .field-group select:focus {
+      border-color: var(--gold);
+      background: #fff;
+      box-shadow: 0 0 0 3px rgba(201,168,76,0.12);
+    }
+    .field-group input:invalid:not(:placeholder-shown),
+    .field-group textarea:invalid:not(:placeholder-shown) {
+      border-color: var(--copper);
+    }
+    .field-group textarea {
+      min-height: 130px;
+      resize: vertical;
+      line-height: 1.7;
+    }
+
+    /* Select custom arrow */
+    .select-wrapper {
+      position: relative;
+    }
+    .select-wrapper::after {
+      content: '';
+      position: absolute;
+      right: 16px;
+      top: 50%;
+      transform: translateY(-50%);
+      width: 0;
+      height: 0;
+      border-left: 5px solid transparent;
+      border-right: 5px solid transparent;
+      border-top: 6px solid var(--gold-dark);
+      pointer-events: none;
+    }
+    .select-wrapper select {
+      padding-right: 40px;
+      cursor: pointer;
+    }
+    .select-wrapper select option {
+      background: #fff;
+      color: var(--dark-text);
+    }
+
+    /* Two-col row */
+    .field-row {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 18px;
+    }
+
+    /* Section divider inside form */
+    .form-section-label {
+      font-family: var(--font-body);
+      font-size: 0.65rem;
+      font-weight: 700;
+      letter-spacing: 0.25em;
+      text-transform: uppercase;
+      color: var(--gold-dark);
+      border-top: 1px solid rgba(201,168,76,0.2);
+      padding-top: 26px;
+      margin: 28px 0 20px;
+      display: block;
+    }
+
+    /* Checkboxes */
+    .checkbox-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 10px;
+    }
+    .checkbox-item {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      cursor: pointer;
+      padding: 11px 14px;
+      border: 1.5px solid rgba(201,168,76,0.25);
+      border-radius: 3px;
+      background: var(--off-white);
+      transition: border-color 0.2s ease, background 0.2s ease;
+      min-height: 48px; /* touch target */
+      user-select: none;
+    }
+    .checkbox-item:hover {
+      border-color: var(--gold);
+      background: rgba(201,168,76,0.05);
+    }
+    .checkbox-item input[type="checkbox"] {
+      width: 16px;
+      height: 16px;
+      min-width: 16px;
+      accent-color: var(--gold);
+      cursor: pointer;
+      margin: 0;
+      padding: 0;
+      border: none;
+      background: none;
+      box-shadow: none;
+      flex-shrink: 0;
+    }
+    .checkbox-item input[type="checkbox"]:focus-visible {
+      outline: 3px solid var(--gold);
+      outline-offset: 2px;
+    }
+    .checkbox-item:has(input:checked) {
+      border-color: var(--gold);
+      background: rgba(201,168,76,0.08);
+    }
+    .checkbox-label {
+      font-size: 0.86rem;
+      font-weight: 500;
+      color: var(--dark-text);
+      line-height: 1.3;
+    }
+
+    /* Radio buttons (how did you find us) */
+    .radio-group {
+      display: flex;
+      gap: 12px;
+      flex-wrap: wrap;
+    }
+    .radio-item {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      cursor: pointer;
+      padding: 12px 20px;
+      border: 1.5px solid rgba(201,168,76,0.25);
+      border-radius: 3px;
+      background: var(--off-white);
+      transition: border-color 0.2s ease, background 0.2s ease;
+      min-height: 48px;
+      flex: 1;
+      min-width: 140px;
+      user-select: none;
+    }
+    .radio-item:hover {
+      border-color: var(--gold);
+      background: rgba(201,168,76,0.05);
+    }
+    .radio-item input[type="radio"] {
+      width: 16px;
+      height: 16px;
+      min-width: 16px;
+      accent-color: var(--gold);
+      cursor: pointer;
+      margin: 0;
+      padding: 0;
+      border: none;
+      background: none;
+      box-shadow: none;
+      flex-shrink: 0;
+    }
+    .radio-item input[type="radio"]:focus-visible {
+      outline: 3px solid var(--gold);
+      outline-offset: 2px;
+    }
+    .radio-item:has(input:checked) {
+      border-color: var(--gold);
+      background: rgba(201,168,76,0.08);
+    }
+    .radio-label {
+      font-size: 0.88rem;
+      font-weight: 500;
+      color: var(--dark-text);
+    }
+
+    /* Submit button */
+    .submit-btn {
+      width: 100%;
+      margin-top: 32px;
+      background: var(--gold);
+      color: var(--dark-text);
+      border: none;
+      border-radius: 3px;
+      padding: 18px 32px;
+      font-family: var(--font-body);
+      font-size: 0.82rem;
+      font-weight: 700;
+      letter-spacing: 0.16em;
+      text-transform: uppercase;
+      cursor: pointer;
+      min-height: 54px;
+      transition: background 0.25s ease, transform 0.2s ease, box-shadow 0.25s ease;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+    }
+    .submit-btn:hover {
+      background: var(--gold-dark);
+      color: #fff;
+      transform: translateY(-2px);
+      box-shadow: 0 8px 28px rgba(201,168,76,0.28);
+    }
+    .submit-btn:focus-visible {
+      outline: 3px solid var(--gold-dark);
+      outline-offset: 3px;
+    }
+    .submit-btn:active { transform: translateY(0); }
+    .submit-btn svg {
+      width: 16px;
+      height: 16px;
+      transition: transform 0.2s ease;
+    }
+    .submit-btn:hover svg { transform: translateX(3px); }
+
+    .form-note {
+      text-align: center;
+      font-size: 0.75rem;
+      color: rgba(26,18,8,0.4);
+      margin-top: 14px;
+      line-height: 1.5;
+    }
+
+    /* ── Thank-you state ── */
+    .thankyou-panel {
+      display: none;
+      text-align: center;
+      padding: 20px 10px 10px;
+    }
+    .thankyou-panel.visible { display: block; }
+
+    .thankyou-icon {
+      width: 68px;
+      height: 68px;
+      border-radius: 50%;
+      background: rgba(201,168,76,0.12);
+      border: 2px solid var(--gold);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin: 0 auto 22px;
+      font-size: 1.8rem;
+    }
+    .thankyou-panel h2 {
+      font-family: var(--font-display);
+      font-size: 2rem;
+      font-weight: 400;
+      color: var(--dark-text);
+      margin-bottom: 12px;
+    }
+    .thankyou-panel h2 em { font-style: italic; color: var(--gold); }
+    .thankyou-panel p {
+      color: rgba(26,18,8,0.6);
+      font-size: 0.95rem;
+      max-width: 400px;
+      margin: 0 auto 28px;
+      line-height: 1.8;
+    }
+    .thankyou-actions {
+      display: flex;
+      gap: 14px;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+
+    /* ── Sidebar ── */
+    .quote-sidebar {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+      position: sticky;
+      top: 100px;
+    }
+
+    .q-sidebar-card {
+      background: #ffffff;
+      border: 1px solid rgba(201,168,76,0.28);
+      border-radius: 5px;
+      padding: 28px 26px;
+      box-shadow: 0 2px 16px rgba(201,168,76,0.06);
+      transition: border-color 0.3s ease;
+    }
+    .q-sidebar-card:hover { border-color: rgba(201,168,76,0.5); }
+
+    .q-sidebar-label {
+      font-family: var(--font-body);
+      font-size: 0.62rem;
+      font-weight: 700;
+      letter-spacing: 0.22em;
+      text-transform: uppercase;
+      color: var(--gold-dark);
+      display: block;
+      margin-bottom: 10px;
+    }
+    .q-sidebar-card h3 {
+      font-family: var(--font-display);
+      font-size: 1.1rem;
+      font-weight: 400;
+      color: var(--dark-text);
+      margin-bottom: 10px;
+    }
+    .q-sidebar-card p {
+      font-size: 0.85rem;
+      color: rgba(26,18,8,0.6);
+      line-height: 1.75;
+    }
+
+    .q-sidebar-card a.sidebar-email {
+      display: inline-flex;
+      align-items: center;
+      gap: 7px;
+      font-size: 0.82rem;
+      font-weight: 600;
+      color: var(--gold-dark);
+      margin-top: 12px;
+      transition: color 0.2s ease;
+    }
+    .q-sidebar-card a.sidebar-email:hover { color: var(--gold); }
+
+    /* Process steps */
+    .process-steps {
+      display: flex;
+      flex-direction: column;
+      gap: 14px;
+      margin-top: 4px;
+    }
+    .process-step {
+      display: flex;
+      gap: 14px;
+      align-items: flex-start;
+    }
+    .step-num {
+      width: 26px;
+      height: 26px;
+      border-radius: 50%;
+      background: rgba(201,168,76,0.12);
+      border: 1px solid rgba(201,168,76,0.4);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-family: var(--font-display);
+      font-size: 0.85rem;
+      font-weight: 600;
+      color: var(--gold-dark);
+      flex-shrink: 0;
+      margin-top: 1px;
+    }
+    .step-text {
+      font-size: 0.84rem;
+      color: rgba(26,18,8,0.65);
+      line-height: 1.6;
+    }
+    .step-text strong {
+      display: block;
+      color: var(--dark-text);
+      font-weight: 600;
+      font-size: 0.86rem;
+      margin-bottom: 2px;
+    }
+
+    /* Footer on white pages */
+    footer { background: var(--header-bg); }
+
+    /* ── Responsive ── */
+    @media (max-width: 960px) {
+      .quote-layout {
+        grid-template-columns: 1fr;
+        gap: 40px;
+      }
+      .quote-sidebar {
+        position: static;
+        flex-direction: row;
+        flex-wrap: wrap;
+      }
+      .q-sidebar-card { flex: 1 1 240px; }
+    }
+
+    @media (max-width: 600px) {
+      .quote-body { padding: 40px 16px 60px; }
+      .quote-hero { padding: 60px 20px 50px; }
+      .breadcrumb { padding: 10px 20px; }
+      .form-card { padding: 30px 22px; }
+      .field-row { grid-template-columns: 1fr; gap: 0; }
+      .checkbox-grid { grid-template-columns: 1fr; }
+      .quote-sidebar { flex-direction: column; }
+    }
+  </style>
+</head>
+
+<body>
+
+  <a href="#main-content" class="skip-link">Skip to main content</a>
+
+  <!-- ══════════════════ HEADER ══════════════════ -->
+  <header role="banner">
+    <div class="header-inner">
+      <a href="index.html" class="logo" aria-label="Ascend Web Studio — Go to homepage">
+        Ascend Web Studio
+        <span>Website Design &amp; Strategy</span>
+      </a>
+      <button
+        class="hamburger"
+        id="hamburger"
+        aria-label="Open navigation menu"
+        aria-expanded="false"
+        aria-controls="navDropdown">
+        <span class="bar" aria-hidden="true"></span>
+        <span class="bar" aria-hidden="true"></span>
+        <span class="bar" aria-hidden="true"></span>
+      </button>
+    </div>
+  </header>
+
+  <div class="nav-overlay" id="navOverlay" aria-hidden="true"></div>
+  <nav class="nav-dropdown" id="navDropdown" aria-label="Primary navigation" aria-hidden="true">
+    <a href="index.html">Home</a>
+    <a href="about.html">About Me</a>
+    <a href="references.html">Our Work</a>
+    <a href="quote.html" class="nav-cta" aria-current="page">Get a Quote</a>
+  </nav>
+
+  <!-- ══════════════════ MAIN ══════════════════ -->
+  <main id="main-content">
+
+    <!-- Breadcrumb -->
+    <nav class="breadcrumb" aria-label="Breadcrumb">
+      <div class="breadcrumb-inner">
+        <a href="index.html">Home</a>
+        <span class="breadcrumb-sep" aria-hidden="true">›</span>
+        <span aria-current="page">Get a Quote</span>
+      </div>
+    </nav>
+
+    <!-- Hero -->
+    <section class="quote-hero" aria-labelledby="quote-page-heading">
+      <span class="hero-eyebrow reveal">Free Consultation</span>
+      <h1 class="reveal" id="quote-page-heading">
+        Let's Talk About<br><em>Your Website</em>
+      </h1>
+      <div class="hero-divider reveal" aria-hidden="true"></div>
+      <p class="reveal">
+        Fill out the form below and I'll get back to you within one business day
+        with a personalized plan — no obligation, no pressure.
+      </p>
+    </section>
+
+    <!-- Form + Sidebar -->
+    <section class="quote-body" aria-labelledby="form-heading">
+      <div class="quote-layout">
+
+        <!-- ── FORM CARD ── -->
+        <div class="form-card reveal">
+
+          <!-- Form -->
+          <div id="formWrapper">
+            <h2 id="form-heading">Tell Me About Your Project</h2>
+            <p>Fields marked <span style="color:var(--copper);">*</span> are required.</p>
+
+            <form id="quoteForm" novalidate aria-label="Quote request form">
+
+              <!-- Name + Business -->
+              <div class="field-row">
+                <div class="field-group">
+                  <label for="fname">
+                    Your Name <span class="required-star" aria-hidden="true">*</span>
+                  </label>
+                  <input
+                    type="text"
+                    id="fname"
+                    name="name"
+                    placeholder="Carson Dohemann"
+                    required
+                    autocomplete="name"
+                    aria-required="true" />
+                </div>
+                <div class="field-group">
+                  <label for="business">
+                    Business / Company <span class="required-star" aria-hidden="true">*</span>
+                  </label>
+                  <input
+                    type="text"
+                    id="business"
+                    name="business"
+                    placeholder="Acme Co."
+                    required
+                    autocomplete="organization"
+                    aria-required="true" />
+                </div>
+              </div>
+
+              <!-- Email + Phone -->
+              <div class="field-row">
+                <div class="field-group">
+                  <label for="email">
+                    Email Address <span class="required-star" aria-hidden="true">*</span>
+                  </label>
+                  <input
+                    type="email"
+                    id="email"
+                    name="email"
+                    placeholder="you@example.com"
+                    required
+                    autocomplete="email"
+                    aria-required="true" />
+                </div>
+                <div class="field-group">
+                  <label for="phone">
+                    Phone Number <span class="required-star" aria-hidden="true">*</span>
+                  </label>
+                  <input
+                    type="tel"
+                    id="phone"
+                    name="phone"
+                    placeholder="(415) 555-0100"
+                    required
+                    autocomplete="tel"
+                    aria-required="true" />
+                </div>
+              </div>
+
+              <!-- Services -->
+              <span class="form-section-label" id="services-label">Services Needed</span>
+              <fieldset style="border:none;padding:0;margin:0;" aria-labelledby="services-label">
+                <legend class="sr-only">Select the services you're interested in</legend>
+                <div class="checkbox-grid">
+                  <label class="checkbox-item">
+                    <input type="checkbox" name="services" value="New Website" />
+                    <span class="checkbox-label">New Website</span>
+                  </label>
+                  <label class="checkbox-item">
+                    <input type="checkbox" name="services" value="Redesign" />
+                    <span class="checkbox-label">Redesign</span>
+                  </label>
+                  <label class="checkbox-item">
+                    <input type="checkbox" name="services" value="SEO" />
+                    <span class="checkbox-label">SEO</span>
+                  </label>
+                  <label class="checkbox-item">
+                    <input type="checkbox" name="services" value="Maintenance" />
+                    <span class="checkbox-label">Maintenance</span>
+                  </label>
+                </div>
+              </fieldset>
+
+              <!-- Budget -->
+              <span class="form-section-label" id="budget-label">Website Budget</span>
+              <div class="field-group" style="margin-bottom:0;">
+                <label for="budget" class="sr-only">Select your budget range</label>
+                <div class="select-wrapper">
+                  <select id="budget" name="budget" aria-labelledby="budget-label" required aria-required="true">
+                    <option value="" disabled selected>Select a budget range…</option>
+                    <option value="0-2000">$0 – $2,000</option>
+                    <option value="2000-4000">$2,000 – $4,000</option>
+                    <option value="4000-6000">$4,000 – $6,000</option>
+                    <option value="6000-10000">$6,000 – $10,000</option>
+                    <option value="10000+">$10,000+</option>
+                  </select>
+                </div>
+              </div>
+
+              <!-- How did you find us -->
+              <span class="form-section-label" id="referral-label">How Did You Find Us?</span>
+              <fieldset style="border:none;padding:0;margin:0;" aria-labelledby="referral-label">
+                <legend class="sr-only">How did you find Ascend Web Studio?</legend>
+                <div class="radio-group">
+                  <label class="radio-item">
+                    <input type="radio" name="referral" value="Online" required aria-required="true" />
+                    <span class="radio-label">Online</span>
+                  </label>
+                  <label class="radio-item">
+                    <input type="radio" name="referral" value="Word of Mouth" />
+                    <span class="radio-label">Word of Mouth</span>
+                  </label>
+                </div>
+              </fieldset>
+
+              <!-- Project details (optional) -->
+              <span class="form-section-label">About Your Project <span class="optional-tag">Optional</span></span>
+              <div class="field-group" style="margin-bottom:0;">
+                <label for="project" class="sr-only">Tell us about your project</label>
+                <textarea
+                  id="project"
+                  name="project"
+                  placeholder="Tell me a little about your business, what you're looking for, and any goals or ideas you have in mind…"
+                  aria-label="Project details (optional)">
+                </textarea>
+              </div>
+
+              <!-- Error message -->
+              <div id="formError" role="alert" aria-live="polite" style="display:none; margin-top:16px; padding:12px 16px; background:rgba(139,94,60,0.08); border:1px solid rgba(139,94,60,0.3); border-radius:3px; font-size:0.85rem; color:var(--copper-dark);"></div>
+
+              <!-- Submit -->
+              <button type="submit" class="submit-btn">
+                Send My Request
+                <svg viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                  <path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+              </button>
+              <p class="form-note">I'll get back to you within one business day. No spam, ever.</p>
+
+            </form>
+          </div>
+
+          <!-- Thank-you panel (hidden until submit) -->
+          <div class="thankyou-panel" id="thankYouPanel" aria-live="polite">
+            <div class="thankyou-icon" aria-hidden="true">✓</div>
+            <h2>Thank You,<br><em id="thankYouName">Friend!</em></h2>
+            <p>
+              Your request came through perfectly. I'll review your project details
+              and reach out within one business day to talk next steps.
+            </p>
+            <div class="thankyou-actions">
+              <a href="references.html" class="btn btn-gold">See Our Work</a>
+              <a href="index.html" class="btn btn-outline" style="color:var(--gold-dark); border-color:var(--gold-dark);">Back to Home</a>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- ── SIDEBAR ── -->
+        <aside class="quote-sidebar" aria-label="What to expect after submitting">
+
+          <div class="q-sidebar-card reveal">
+            <span class="q-sidebar-label">What Happens Next</span>
+            <h3>The Process</h3>
+            <div class="process-steps">
+              <div class="process-step">
+                <span class="step-num" aria-hidden="true">1</span>
+                <div class="step-text">
+                  <strong>You submit this form</strong>
+                  Takes about 2 minutes to fill out.
+                </div>
+              </div>
+              <div class="process-step">
+                <span class="step-num" aria-hidden="true">2</span>
+                <div class="step-text">
+                  <strong>I review your request</strong>
+                  I'll look over your goals and budget within one business day.
+                </div>
+              </div>
+              <div class="process-step">
+                <span class="step-num" aria-hidden="true">3</span>
+                <div class="step-text">
+                  <strong>We connect</strong>
+                  A quick call to talk through your project and make sure we're the right fit.
+                </div>
+              </div>
+              <div class="process-step">
+                <span class="step-num" aria-hidden="true">4</span>
+                <div class="step-text">
+                  <strong>You get a custom quote</strong>
+                  Clear, itemized, and no surprises.
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="q-sidebar-card reveal">
+            <span class="q-sidebar-label">Prefer Email?</span>
+            <h3>Reach Out Directly</h3>
+            <p>If you'd rather skip the form, feel free to email me directly and I'll get right back to you.</p>
+            <a href="mailto:hello@ascendwebstudio.com" class="sidebar-email">
+              <svg width="14" height="14" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                <path d="M2 4l6 5 6-5M2 4h12v9H2V4z" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+              hello@ascendwebstudio.com
+            </a>
+          </div>
+
+          <div class="q-sidebar-card reveal">
+            <span class="q-sidebar-label">Already Decided?</span>
+            <h3>See Real Results First</h3>
+            <p>Browse websites I've built for real businesses before you commit to anything.</p>
+            <a href="references.html" style="display:inline-flex;align-items:center;gap:6px;font-size:0.78rem;font-weight:600;letter-spacing:0.1em;text-transform:uppercase;color:var(--gold-dark);margin-top:12px;transition:gap 0.2s ease;">
+              View our work →
+            </a>
+          </div>
+
+        </aside>
+
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ══════════════════ FOOTER ══════════════════ -->
+  <footer role="contentinfo">
+    <div class="footer-inner">
+      <div class="footer-brand">
+        <a href="index.html" class="logo" aria-label="Ascend Web Studio — Home">
+          Ascend Web Studio
+          <span>Website Design &amp; Strategy</span>
+        </a>
+        <p>
+          SEO-first websites for businesses and individuals who want their
+          online presence to actually grow their bottom line.
+        </p>
+      </div>
+      <nav class="footer-col" aria-label="Footer site links">
+        <h4>Navigate</h4>
+        <a href="index.html">Home</a>
+        <a href="about.html">About Me</a>
+        <a href="references.html">Our Work</a>
+        <a href="quote.html" aria-current="page">Get a Quote</a>
+      </nav>
+      <div class="footer-col">
+        <h4>Contact</h4>
+        <a href="mailto:hello@ascendwebstudio.com">hello@ascendwebstudio.com</a>
+        <a href="quote.html">Request a Consultation</a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p><small>&copy; 2026 Ascend Web Studio. All rights reserved.</small></p>
+      <a href="quote.html">Get Started →</a>
+    </div>
+  </footer>
+
+  <!-- ══════════════════ SCRIPTS ══════════════════ -->
+  <script>
+    const prefersReduced = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+    // ── Nav ──
+    const hamburger = document.getElementById('hamburger');
+    const navDropdown = document.getElementById('navDropdown');
+    const navOverlay = document.getElementById('navOverlay');
+
+    function toggleNav(open) {
+      hamburger.classList.toggle('open', open);
+      hamburger.setAttribute('aria-expanded', String(open));
+      navDropdown.classList.toggle('open', open);
+      navDropdown.setAttribute('aria-hidden', String(!open));
+      navOverlay.setAttribute('aria-hidden', String(!open));
+      navOverlay.classList.toggle('open', open);
+      document.body.style.overflow = open ? 'hidden' : '';
+      if (open) { const f = navDropdown.querySelector('a'); if (f) f.focus(); }
+      else { hamburger.focus(); }
+    }
+    hamburger.addEventListener('click', () => toggleNav(!hamburger.classList.contains('open')));
+    navOverlay.addEventListener('click', () => toggleNav(false));
+    document.addEventListener('keydown', (e) => { if (e.key === 'Escape') toggleNav(false); });
+    navDropdown.addEventListener('keydown', (e) => {
+      if (e.key !== 'Tab') return;
+      const links = Array.from(navDropdown.querySelectorAll('a'));
+      if (e.shiftKey && document.activeElement === links[0]) { e.preventDefault(); links[links.length-1].focus(); }
+      else if (!e.shiftKey && document.activeElement === links[links.length-1]) { e.preventDefault(); links[0].focus(); }
+    });
+
+    // ── Form submission ──
+    const form = document.getElementById('quoteForm');
+    const formWrapper = document.getElementById('formWrapper');
+    const thankYouPanel = document.getElementById('thankYouPanel');
+    const thankYouName = document.getElementById('thankYouName');
+    const formError = document.getElementById('formError');
+
+    function showError(msg) {
+      formError.textContent = msg;
+      formError.style.display = 'block';
+      formError.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+    }
+    function hideError() {
+      formError.style.display = 'none';
+      formError.textContent = '';
+    }
+
+    form.addEventListener('submit', (e) => {
+      e.preventDefault();
+      hideError();
+
+      // Validate required fields
+      const name     = form.querySelector('#fname').value.trim();
+      const business = form.querySelector('#business').value.trim();
+      const email    = form.querySelector('#email').value.trim();
+      const phone    = form.querySelector('#phone').value.trim();
+      const budget   = form.querySelector('#budget').value;
+      const referral = form.querySelector('input[name="referral"]:checked');
+
+      if (!name)     { showError('Please enter your name.'); form.querySelector('#fname').focus(); return; }
+      if (!business) { showError('Please enter your business or company name.'); form.querySelector('#business').focus(); return; }
+      if (!email || !/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) { showError('Please enter a valid email address.'); form.querySelector('#email').focus(); return; }
+      if (!phone)    { showError('Please enter your phone number.'); form.querySelector('#phone').focus(); return; }
+      if (!budget)   { showError('Please select a budget range.'); form.querySelector('#budget').focus(); return; }
+      if (!referral) { showError('Please let us know how you found us.'); return; }
+
+      // ── Success ──
+      // To connect a real backend later, replace this block with a fetch() POST.
+      // Example: fetch('https://formspree.io/f/YOUR_ID', { method:'POST', body: new FormData(form) })
+
+      thankYouName.textContent = name + '!';
+      formWrapper.style.display = 'none';
+      thankYouPanel.classList.add('visible');
+      thankYouPanel.focus();
+
+      // Scroll to top of card
+      document.querySelector('.form-card').scrollIntoView({ behavior: 'smooth', block: 'start' });
+    });
+
+    // ── Scroll reveal ──
+    if (prefersReduced) {
+      document.querySelectorAll('.reveal').forEach(el => el.classList.add('visible'));
+    } else {
+      const observer = new IntersectionObserver((entries) => {
+        entries.forEach((entry, i) => {
+          if (entry.isIntersecting) {
+            setTimeout(() => entry.target.classList.add('visible'), i * 90);
+            observer.unobserve(entry.target);
+          }
+        });
+      }, { threshold: 0.08, rootMargin: '0px 0px -40px 0px' });
+      document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
+    }
+  </script>
+
+</body>
+</html>
